@@ -258,7 +258,7 @@ print(just_out)
 
 print("\n------------------------------------------------\n")
 
-tech_in = input("8. Bitte das Technologielevel (0-15) eingeben: ")
+tech_in = input("8. Bitte das Technologielevel (0-F) eingeben: ")
 if tech_in == "0":
     tech_out += tech[0]
 elif tech_in == "1":
@@ -279,17 +279,17 @@ elif tech_in == "8":
     tech_out += tech[8]
 elif tech_in == "9":
     tech_out += tech[9]
-elif tech_in == "10":
+elif tech_in == "A" or tech_in == "a":
     tech_out += tech[10]
-elif tech_in == "11":
+elif tech_in == "B" or tech_in == "b":
     tech_out += tech[11]
-elif tech_in == "12":
+elif tech_in == "C" or tech_in == "c":
     tech_out += tech[12]
-elif tech_in == "13":
+elif tech_in == "D" or tech_in == "d":
     tech_out += tech[13]
-elif tech_in == "14":
-    tech_out += tech[14]
-elif tech_in == "15":
+elif tech_in == "E" or tech_in == "e":
+    tech_out += tech[14] 
+elif tech_in == "F" or tech_in == "f":
     tech_out += tech[15]
 else:
     print("falsche Eingabe")
