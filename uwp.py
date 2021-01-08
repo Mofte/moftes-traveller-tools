@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 def divider():
   print("\n" + "-"*48 + "\n")
 
