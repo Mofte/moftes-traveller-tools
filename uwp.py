@@ -29,11 +29,11 @@ print("\t\t\t\t\t-----\n")
 
 name = input("Bitte den Namen der Welt eingeben: ")
 
-print("\n------------------------------------------------\n")
+print("\n" + "-"*48 + "\n")
 
 print("Bitte das gewünschte UWP nach und nach eingeben.")
 
-print("\n------------------------------------------------\n")
+print("\n" + "-"*48 + "\n")
 
 port_in = input("1. Bitte die Raumhafenklasse (A-E, X) eingeben: ")
 if port_in == "A" or port_in == "a":
@@ -54,7 +54,7 @@ else:
     
 print(port_out)
 
-print("\n------------------------------------------------\n")
+print("\n" + "-"*48 + "\n")
 
 size_in = input("2. Bitte die Weltengröße (0-A) eingeben: ")
 if size_in == "0":
@@ -85,7 +85,7 @@ else:
     
 print(size_out)
 
-print("\n------------------------------------------------\n")
+print("\n" + "-"*48 + "\n")
 
 atmo_in = input("3. Bitte den Atmosphärewert (0-F) eingeben: ")
 if atmo_in == "0":
@@ -126,7 +126,7 @@ else:
     
 print(atmo_out)
 
-print("\n------------------------------------------------\n")
+print("\n" + "-"*48 + "\n")
 
 hydro_in = input("4. Bitte den Hydrographiewert (0-A) eingeben: ")
 if hydro_in == "0":
@@ -157,7 +157,7 @@ else:
     
 print(hydro_out)
 
-print("\n------------------------------------------------\n")
+print("\n" + "-"*48 + "\n")
 
 pop_in = input("5. Bitte den Populationswert (0-C) eingeben: ")
 if pop_in == "0":
@@ -192,7 +192,8 @@ else:
     
 print(pop_out)
 
-print("\n------------------------------------------------\n")
+print("\n" + "-"*48 + "\n")
+
 gov_in = input("6. Bitte den Regierungstyp (0-D) eingeben: ")
 if gov_in == "0":
     gov_out += gov[0]
@@ -228,7 +229,8 @@ else:
 
 print(gov_out)
 
-print("\n------------------------------------------------\n")
+print("\n" + "-"*48 + "\n")
+
 just_in = input("7. Bitte den Justizgrad (0-9+) eingeben: ")
 if just_in == "0":
     just_out += just[0]
@@ -256,7 +258,7 @@ else:
 
 print(just_out)
 
-print("\n------------------------------------------------\n")
+print("\n" + "-"*48 + "\n")
 
 tech_in = input("8. Bitte das Technologielevel (0-F) eingeben: ")
 if tech_in == "0":
@@ -297,6 +299,6 @@ else:
     
 print(tech_out)
 
-print("\n------------------------------------------------\n")
+print("\n" + "-"*48 + "\n")
 
 print(f"{name}\n{port_out}\n{size_out}\n{atmo_out}\n{hydro_out}\n{pop_out}\n{gov_out}\n{just_out}\n{tech_out}")
