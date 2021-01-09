@@ -62,26 +62,8 @@ print(port_out)
 print(divider)
 
 size_in = input("2. Bitte die Weltengröße (0-A) eingeben: ")
-if size_in == "0":
-    size_out += size[0]
-elif size_in == "1":
-    size_out += size[1]
-elif size_in == "2":
-    size_out += size[2]
-elif size_in == "3":
-    size_out += size[3]
-elif size_in == "4":
-    size_out += size[4]
-elif size_in == "5":
-    size_out += size[5]
-elif size_in == "6":
-    size_out += size[6]
-elif size_in == "7":
-    size_out += size[7]
-elif size_in == "8":
-    size_out += size[8]
-elif size_in == "9":
-    size_out += size[9]
+if int(size_in) >= 0 and int(size_in) <= 9:
+    size_out += size[int(size_in)]
 elif size_in == "A" or size_in == "a":
     size_out += size[10]
 else:
@@ -93,26 +75,8 @@ print(size_out)
 print(divider)
 
 atmo_in = input("3. Bitte den Atmosphärewert (0-F) eingeben: ")
-if atmo_in == "0":
-    atmo_out += atmo[0]
-elif atmo_in == "1":
-    atmo_out += atmo[1]
-elif atmo_in == "2":
-    atmo_out += atmo[2]
-elif atmo_in == "3":
-    atmo_out += atmo[3]
-elif atmo_in == "4":
-    atmo_out += atmo[4]
-elif atmo_in == "5":
-    atmo_out += atmo[5]
-elif atmo_in == "6":
-    atmo_out += atmo[6]
-elif atmo_in == "7":
-    atmo_out += atmo[7]
-elif atmo_in == "8":
-    atmo_out += atmo[8]
-elif atmo_in == "9":
-    atmo_out += atmo[9]
+if int(atmo_in) >= 0 and int(atmo_in) <=9:
+    atmo_out += atmo[int(atmo_in)]
 elif atmo_in == "A" or atmo_in == "a":
     atmo_out += atmo[10]
 elif atmo_in == "B" or atmo_in == "b":
@@ -134,26 +98,8 @@ print(atmo_out)
 print(divider)
 
 hydro_in = input("4. Bitte den Hydrographiewert (0-A) eingeben: ")
-if hydro_in == "0":
-    hydro_out += hydro[0]
-elif hydro_in == "1":
-    hydro_out += hydro[1]
-elif hydro_in == "2":
-    hydro_out += hydro[2]
-elif hydro_in == "3":
-    hydro_out += hydro[3]
-elif hydro_in == "4":
-    hydro_out += hydro[4]
-elif hydro_in == "5":
-    hydro_out += hydro[5]
-elif hydro_in == "6":
-    hydro_out += hydro[6]
-elif hydro_in == "7":
-    hydro_out += hydro[7]
-elif hydro_in == "8":
-    hydro_out += hydro[8]
-elif hydro_in == "9":
-    hydro_out += hydro[9]
+if int(hydro_in) >= 0 and int(hydro_in) <= 9:
+    hydro_out += hydro[int(hydro_in)]
 elif hydro_in == "A" or hydro_in == "a":
     hydro_out += hydro[10]
 else:
@@ -165,26 +111,8 @@ print(hydro_out)
 print(divider)
 
 pop_in = input("5. Bitte den Populationswert (0-C) eingeben: ")
-if pop_in == "0":
-    pop_out += pop[0]
-elif pop_in == "1":
-    pop_out += pop[1]
-elif pop_in == "2":
-    pop_out += pop[2]
-elif pop_in == "3":
-    pop_out += pop[3]
-elif pop_in == "4":
-    pop_out += pop[4]
-elif pop_in == "5":
-    pop_out += pop[5]
-elif pop_in == "6":
-    pop_out += pop[6]
-elif pop_in == "7":
-    pop_out += pop[7]
-elif pop_in == "8":
-    pop_out += pop[8]
-elif pop_in == "9":
-    pop_out += pop[9]
+if int(pop_in) >= 0 and int(pop_in) <= 9:
+    pop_out += pop[int(pop_in)]
 elif pop_in == "A" or pop_in == "a":
     pop_out += pop[10]
 elif pop_in == "B" or pop_in == "b":
@@ -200,26 +128,8 @@ print(pop_out)
 print(divider)
 
 gov_in = input("6. Bitte den Regierungstyp (0-D) eingeben: ")
-if gov_in == "0":
-    gov_out += gov[0]
-elif gov_in == "1":
-    gov_out += gov[1]
-elif gov_in == "2":
-    gov_out += gov[2]
-elif gov_in == "3":
-    gov_out += gov[3]
-elif gov_in == "4":
-    gov_out += gov[4]
-elif gov_in == "5":
-    gov_out += gov[5]
-elif gov_in == "6":
-    gov_out += gov[6]
-elif gov_in == "7":
-    gov_out += gov[7]
-elif gov_in == "8":
-    gov_out += gov[8]
-elif gov_in == "9":
-    gov_out += gov[9]
+if int(gov_in) >= 0 and int(gov_in) <= 9:
+    gov_out += gov[int(gov_in)]
 elif gov_in == "A" or gov_in == "a":
     gov_out += gov[10]
 elif gov_in == "B" or gov_in == "b":
@@ -237,25 +147,9 @@ print(gov_out)
 print(divider)
 
 just_in = input("7. Bitte den Justizgrad (0-9+) eingeben: ")
-if just_in == "0":
-    just_out += just[0]
-elif just_in == "1":
-    just_out += just[1]
-elif just_in == "2":
-    just_out += just[2]
-elif just_in == "3":
-    just_out += just[3]
-elif just_in == "4":
-    just_out += just[4]
-elif just_in == "5":
-    just_out += just[5]
-elif just_in == "6":
-    just_out += just[6]
-elif just_in == "7":
-    just_out += just[7]
-elif just_in == "8":
-    just_out += just[8]
-elif just_in == "9" or just_in == "9+":
+if int(just_in) >= 0 and int(just_in) <= 9::
+    just_out += just[int(just_in)]
+elif just_in == "9+":
     just_out += just[9]
 else:
     print("falsche Eingabe")
@@ -266,26 +160,8 @@ print(just_out)
 print(divider)
 
 tech_in = input("8. Bitte das Technologielevel (0-F) eingeben: ")
-if tech_in == "0":
-    tech_out += tech[0]
-elif tech_in == "1":
-    tech_out += tech[1]
-elif tech_in == "2":
-    tech_out += tech[2]
-elif tech_in == "3":
-    tech_out += tech[3]
-elif tech_in == "4":
-    tech_out += tech[4]
-elif tech_in == "5":
-    tech_out += tech[5]
-elif tech_in == "6":
-    tech_out += tech[6]
-elif tech_in == "7":
-    tech_out += tech[7]
-elif tech_in == "8":
-    tech_out += tech[8]
-elif tech_in == "9":
-    tech_out += tech[9]
+if int(tech_in) >= 0 abd int(tech_in) <= 9:
+    tech_out += tech[int(tech_in)]
 elif tech_in == "A" or tech_in == "a":
     tech_out += tech[10]
 elif tech_in == "B" or tech_in == "b":
