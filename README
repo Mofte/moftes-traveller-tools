@@ -1,1 +1,7 @@
-Simple UWP Translator for Mongoose Traveller 1Ed.
+This is a simple UWP Translator for the 1st Edition of the Pen & Paper RPG "Traveller" by Mongoose. The text in this script is german.
+
+UWP stands for Universal World Profile, for more information look here: https://wiki.travellerrpg.com/Universal_World_Profile
+
+This script supports entering the name and the eight base codes.
+
+The name and codes are entered when prompted, for each code the output is displayed after entering and at the end all informations are displayed as a text block.
