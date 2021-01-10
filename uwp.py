@@ -35,8 +35,11 @@ just_out = "Justizgrad: "
 tech = ['primitiv','primitiv','primitiv','primitiv','industriell','industriell','industriell','prä-stellar','prä-stellar','prä-stellar','früh-stellar','früh-stellar','stellar','stellar','stellar','hochstellar']
 tech_out = "Technologielevel: "
 
+print(divider)
 
 print("Ein simpler UWP-Translator für Mongoose Traveller 1Ed.\n")
+
+print(divider)
 
 name = input("Bitte den Namen der Welt eingeben: ")
 
@@ -66,7 +69,7 @@ else:
     
 print(port_out)
 
-divider()
+print(divider)
 
 size_in = input("2. Bitte die Weltengröße (0-A) eingeben: ")
 
@@ -80,7 +83,7 @@ else:
     
 print(size_out)
 
-divider()
+print(divider)
 
 atmo_in = input("3. Bitte den Atmosphärewert (0-F) eingeben: ")
 
@@ -94,7 +97,7 @@ else:
     
 print(atmo_out)
 
-divider()
+print(divider)
   
 hydro_in = input("4. Bitte den Hydrographiewert (0-A) eingeben: ")
 
@@ -108,7 +111,7 @@ else:
     
 print(hydro_out)
 
-divider()
+print(divider)
 
 pop_in = input("5. Bitte den Populationswert (0-C) eingeben: ")
 
@@ -122,7 +125,7 @@ else:
     
 print(pop_out)
 
-divider()
+print(divider)
 
 gov_in = input("6. Bitte den Regierungstyp (0-D) eingeben: ")
 
@@ -136,7 +139,7 @@ else:
     
 print(gov_out)
 
-divider()
+print(divider)
 
 just_in = input("7. Bitte den Justizgrad (0-9) eingeben: ")
 
@@ -148,7 +151,7 @@ else:
     
 print(just_out)
 
-divider()
+print(divider)
 
 tech_in = input("8. Bitte das Technologielevel (0-F) eingeben: ")
 
@@ -162,6 +165,8 @@ else:
     
 print(tech_out)
 
-divider()
+print(divider)
 
 print(f"{name}\n{port_out}\n{size_out}\n{atmo_out}\n{hydro_out}\n{pop_out}\n{gov_out}\n{just_out}\n{tech_out}")
+
+print(divider)
