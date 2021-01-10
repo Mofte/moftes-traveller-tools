@@ -35,17 +35,8 @@ just_out = "Justizgrad: "
 tech = ['primitiv','primitiv','primitiv','primitiv','industriell','industriell','industriell','prä-stellar','prä-stellar','prä-stellar','früh-stellar','früh-stellar','stellar','stellar','stellar','hochstellar']
 tech_out = "Technologielevel: "
 
-print("\t\t\t\t\t-----")
-print("\t\t\t\t-----")
-print("\t\t\t-----")
-print("\t\t-----")
-print("\t-----\n")
+
 print("Ein simpler UWP-Translator für Mongoose Traveller 1Ed.\n")
-print("\t-----")
-print("\t\t-----")
-print("\t\t\t-----")
-print("\t\t\t\t-----")
-print("\t\t\t\t\t-----\n")
 
 name = input("Bitte den Namen der Welt eingeben: ")
 
@@ -62,6 +53,7 @@ just_in = input("7. Bitte den Justizgrad (0-9+) eingeben: ")
 tech_in = input("8. Bitte das Technologielevel (0-F) eingeben: ")
 
 translate_code(port_in)
+print(port_in)
 translate_code(size_in)
 translate_code(atmo_in)
 translate_code(hydro_in)
