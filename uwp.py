@@ -61,7 +61,7 @@ gov_in = input("6. Bitte den Regierungstyp (0-D) eingeben: ")
 just_in = input("7. Bitte den Justizgrad (0-9+) eingeben: ")
 tech_in = input("8. Bitte das Technologielevel (0-F) eingeben: ")
 
-uwp = [port_in, size_in, atmo_in, hydro_in, pop_in, gov_in, just_in, tech_in]
+uwp = (port_in, size_in, atmo_in, hydro_in, pop_in, gov_in, just_in, tech_in)
 
 translate_uwp(uwp)
 
