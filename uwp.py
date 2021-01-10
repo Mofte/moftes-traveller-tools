@@ -74,12 +74,12 @@ print(port_out)
 
 print(divider)
 
-size_in = input("2. Bitte die Weltengröße (0-A) eingeben: ")
-int(translate_code(size_in))
+size_true = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A"]
 
-while (size_in < 0 and size_in > 10):
+while size_in not in size_true:
   size_in = input("2. Bitte die Weltengröße (0-A) eingeben: ")
-  size_in = int(translate_code(size_in))
+
+size_in = int(translate_code(size_in))
 
 if size_in >= 0 and size_in <= 10:
   size_out += size[size_in]
