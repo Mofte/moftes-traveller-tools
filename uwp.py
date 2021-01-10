@@ -61,20 +61,20 @@ gov_in = input("6. Bitte den Regierungstyp (0-D) eingeben: ")
 just_in = input("7. Bitte den Justizgrad (0-9+) eingeben: ")
 tech_in = input("8. Bitte das Technologielevel (0-F) eingeben: ")
 
-uwp = (port_in, size_in, atmo_in, hydro_in, pop_in, gov_in, just_in, tech_in)
+uwp = port_in + size_in + atmo_in + hydro_in + pop_in + gov_in + just_in + tech_in
 
 translate_uwp(uwp)
 
 int(uwp)
 
-port_out += port[uwp[0]]
-size_out += size[uwp[1]]
-atmo_out += atmo[uwp[2]]
-hydro_out += hydro[uwp[3]]
-pop_out += pop[uwp[4]]
-gov_out += gov[uwp[5]]
-just_out += just[uwp[6]]
-tech_out += tech[uwp[7]]
+port_out += port[uwp(0)]
+size_out += size[uwp(1)]
+atmo_out += atmo[uwp(2)]
+hydro_out += hydro[uwp(3)]
+pop_out += pop[uwp(4)]
+gov_out += gov[uwp(5)]
+just_out += just[uwp(6)]
+tech_out += tech[uwp(7)]
 
 print(divider)
 
