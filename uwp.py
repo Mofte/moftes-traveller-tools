@@ -70,7 +70,7 @@ int(uwp)
 port_out += port[uwp[0]]
 size_out += size[uwp[1]]
 atmo_out += atmo[uwp[2]]
-hydro_out += hydro[uwp3]]
+hydro_out += hydro[uwp[3]]
 pop_out += pop[uwp[4]]
 gov_out += gov[uwp[5]]
 just_out += just[uwp[6]]
