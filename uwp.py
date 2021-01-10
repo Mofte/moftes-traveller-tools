@@ -52,15 +52,14 @@ gov_in = input("6. Bitte den Regierungstyp (0-D) eingeben: ")
 just_in = input("7. Bitte den Justizgrad (0-9+) eingeben: ")
 tech_in = input("8. Bitte das Technologielevel (0-F) eingeben: ")
 
-translate_code(port_in)
-print(port_in)
-translate_code(size_in)
-translate_code(atmo_in)
-translate_code(hydro_in)
-translate_code(pop_in)
-translate_code(gov_in)
-translate_code(just_in)
-translate_code(tech_in)
+port_in = translate_code(port_in)
+size_in = translate_code(size_in)
+atmo_in = translate_code(atmo_in)
+hydro_in = translate_code(hydro_in)
+pop_in = translate_code(pop_in)
+gov_in = translate_code(gov_in)
+just_in = translate_code(just_in)
+tech_in = translate_code(tech_in)
 
 port_out += port[int(port_in)]
 size_out += size[int(size_in)]
