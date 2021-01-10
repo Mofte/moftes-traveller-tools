@@ -74,7 +74,7 @@ print(port_out)
 
 print(divider)
 
-size_in = ""
+size_in = -1
 
 while (size_in < 0 and size_in > 10):
   size_in = input("2. Bitte die Weltengröße (0-A) eingeben: ")
