@@ -67,14 +67,14 @@ translate_uwp(uwp)
 
 int(uwp)
 
-port_out += port[uwp(0)]
-size_out += size[uwp(1)]
-atmo_out += atmo[uwp(2)]
-hydro_out += hydro[uwp(3)]
-pop_out += pop[uwp(4)]
-gov_out += gov[uwp(5)]
-just_out += just[uwp(6)]
-tech_out += tech[uwp(7)]
+port_out += port[int(uwp(0))]
+size_out += size[int(uwp(1))]
+atmo_out += atmo[int(uwp(2))]
+hydro_out += hydro[int(uwp(3))]
+pop_out += pop[int(uwp(4))]
+gov_out += gov[int(uwp(5))]
+just_out += just[int(uwp(6))]
+tech_out += tech[int(uwp(7))]
 
 print(divider)
 
