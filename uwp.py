@@ -49,9 +49,11 @@ print("Bitte das gewünschte UWP nach und nach eingeben.")
 
 print(divider)
 
-port_in = input("1. Bitte die Raumhafenklasse (A-E, X) eingeben: ")
+port_true = ["A", "a", "B", "b", "C", "c", "D", "d", "E", "e", "X", "x"]
 
-while port_in != "A" and port_in != "B" and port_in != "C" and port_in != "D" and port_in != "E" and port_in != "X":
+port _in = ""
+
+while port_in not in port_true:
   port_in = input("1. Bitte die Raumhafenklasse (A-E, X) eingeben: ")
 
 if port_in == "A" or port_in == "a":
@@ -74,7 +76,7 @@ print(port_out)
 
 print(divider)
 
-size_true = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A"]
+size_true = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "a"]
 
 size_in=""
 
@@ -93,7 +95,12 @@ print(size_out)
 
 print(divider)
 
-atmo_in = input("3. Bitte den Atmosphärewert (0-F) eingeben: ")
+atmo_true = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "a",  "B", "b", "C", "c", "D", "d", "E", "e", "F", "f"]
+
+atmo_in=""
+
+while atmo_in not in atmo_true:
+  atmo_in = input("3. Bitte den Atmosphärewert (0-F) eingeben: ")
 
 atmo_in = int(translate_code(atmo_in))
 
@@ -107,7 +114,12 @@ print(atmo_out)
 
 print(divider)
   
-hydro_in = input("4. Bitte den Hydrographiewert (0-A) eingeben: ")
+hydro_true = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "a"]
+
+hydro_in=""
+
+while hydro_in not in hydro_true:
+  hydro_in = input("4. Bitte den Hydrographiewert (0-A) eingeben: ")
 
 hydro_in = int(translate_code(hydro_in))
 
@@ -121,7 +133,12 @@ print(hydro_out)
 
 print(divider)
 
-pop_in = input("5. Bitte den Populationswert (0-C) eingeben: ")
+pop_true = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "a",  "B", "b", "C", "c"]
+
+pop_in=""
+
+while pop_in not in pop_true:
+  pop_in = input("5. Bitte den Populationswert (0-C) eingeben: ")
 
 pop_in = int(translate_code(pop_in))
 
@@ -135,7 +152,12 @@ print(pop_out)
 
 print(divider)
 
-gov_in = input("6. Bitte den Regierungstyp (0-D) eingeben: ")
+gov_true = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "a",  "B", "b", "C", "c", "D", "d"]
+
+gov_in=""
+
+while gov_in not in gov_true:
+  gov_in = input("6. Bitte den Regierungstyp (0-D) eingeben: ")
 
 gov_in = int(translate_code(gov_in))
 
@@ -149,7 +171,12 @@ print(gov_out)
 
 print(divider)
 
-just_in = input("7. Bitte den Justizgrad (0-9) eingeben: ")
+just_true = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+just_in=""
+
+while just_in not in just_true:
+  just_in = input("7. Bitte den Justizgrad (0-9) eingeben: ")
 
 just_in = int(just_in)
 if just_in >= 0 and just_in <= 9:
@@ -162,7 +189,12 @@ print(just_out)
 
 print(divider)
 
-tech_in = input("8. Bitte das Technologielevel (0-F) eingeben: ")
+tech_true = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "a",  "B", "b", "C", "c", "D", "d", "E", "e", "F", "f"]
+
+tech_in=""
+
+while tech_in not in tech_true:
+  tech_in = input("8. Bitte das Technologielevel (0-F) eingeben: ")
 
 tech_in = int(translate_code(tech_in))
 
