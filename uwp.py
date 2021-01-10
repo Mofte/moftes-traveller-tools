@@ -76,10 +76,9 @@ print(divider)
 
 size_in = ""
 
-while (int(size_in) < 0 and int(size_in) > 9) or size_in != "A":
+while (int(size_in) < 0 and int(size_in) > 10):
   size_in = input("2. Bitte die Weltengröße (0-A) eingeben: ")
-
-size_in = int(translate_code(size_in))
+  size_in = int(translate_code(size_in))
 
 if size_in >= 0 and size_in <= 10:
   size_out += size[size_in]
