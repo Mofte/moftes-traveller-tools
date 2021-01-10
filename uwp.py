@@ -68,9 +68,6 @@ elif port_in == "E" or port_in == "e":
     port_out += port[4]
 elif port_in == "X" or port_in == "x":
     port_out += port[5]
-else:
-    print("falsche Eingabe")
-    port_out += "Fehler bei der Eingabe!"
     
 print(port_out)
 
@@ -83,14 +80,8 @@ size_in=""
 while size_in not in size_true:
   size_in = input("2. Bitte die Weltengröße (0-A) eingeben: ")
 
-size_in = int(translate_code(size_in))
+size_out += size[int(translate_code(size_in))]
 
-if size_in >= 0 and size_in <= 10:
-  size_out += size[size_in]
-else:
-    print("falsche Eingabe")
-    size_out += "Fehler bei der Eingabe!"
-    
 print(size_out)
 
 print(divider)
