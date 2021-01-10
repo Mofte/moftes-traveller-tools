@@ -49,7 +49,7 @@ print("Bitte das gewünschte UWP nach und nach eingeben.")
 
 print(divider)
 
-port_in = ""
+port_in = input("1. Bitte die Raumhafenklasse (A-E, X) eingeben: ")
 
 while port_in != "A" and port_in != "B" and port_in != "C" and port_in != "D" and port_in != "E" and port_in != "X":
   port_in = input("1. Bitte die Raumhafenklasse (A-E, X) eingeben: ")
@@ -74,7 +74,8 @@ print(port_out)
 
 print(divider)
 
-size_in = -1
+size_in = input("2. Bitte die Weltengröße (0-A) eingeben: ")
+int(translate_code(size_in))
 
 while (size_in < 0 and size_in > 10):
   size_in = input("2. Bitte die Weltengröße (0-A) eingeben: ")
@@ -90,8 +91,7 @@ print(size_out)
 
 print(divider)
 
-while (int(atmo_in) < 0 and int(atmo_in) > 9) or (atmo_in != "A" and atmo_in != "B" and atmo_in != "C" and atmo_in != "D" and atmo_in != "E" and atmo_in != "F"):
-  atmo_in = input("3. Bitte den Atmosphärewert (0-F) eingeben: ")
+atmo_in = input("3. Bitte den Atmosphärewert (0-F) eingeben: ")
 
 atmo_in = int(translate_code(atmo_in))
 
