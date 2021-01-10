@@ -43,14 +43,10 @@ name = input("Bitte den Namen der Welt eingeben: ")
 print(divider)
 
 print("Bitte das gewünschte UWP nach und nach eingeben.")
+
+print(divider)
+
 port_in = input("1. Bitte die Raumhafenklasse (A-E, X) eingeben: ")
-size_in = input("2. Bitte die Weltengröße (0-A) eingeben: ")
-atmo_in = input("3. Bitte den Atmosphärewert (0-F) eingeben: ")
-hydro_in = input("4. Bitte den Hydrographiewert (0-A) eingeben: ")
-pop_in = input("5. Bitte den Populationswert (0-C) eingeben: ")
-gov_in = input("6. Bitte den Regierungstyp (0-D) eingeben: ")
-just_in = input("7. Bitte den Justizgrad (0-9+) eingeben: ")
-tech_in = input("8. Bitte das Technologielevel (0-F) eingeben: ")
 
 if port_in == "A" or port_in == "a":
     port_out += port[0]
@@ -64,23 +60,108 @@ elif port_in == "E" or port_in == "e":
     port_out += port[4]
 elif port_in == "X" or port_in == "x":
     port_out += port[5]
+else:
+    print("falsche Eingabe")
+    port_out += "Fehler bei der Eingabe!"
+    
+print(port_out)
 
-size_in = translate_code(size_in)
-atmo_in = translate_code(atmo_in)
-hydro_in = translate_code(hydro_in)
-pop_in = translate_code(pop_in)
-gov_in = translate_code(gov_in)
-just_in = translate_code(just_in)
-tech_in = translate_code(tech_in)
+divider()
 
-size_out += size[int(size_in)]
-atmo_out += atmo[int(atmo_in)]
-hydro_out += hydro[int(hydro_in)]
-pop_out += pop[int(pop_in)]
-gov_out += gov[int(gov_in)]
-just_out += just[int(just_in)]
-tech_out += tech[int(tech_in)]
+size_in = input("2. Bitte die Weltengröße (0-A) eingeben: ")
 
-print(divider)
+size_in = int(translate_code(size_in))
+
+if size_in >= 0 and size_in <= 10:
+  size_out += size[size_in]
+else:
+    print("falsche Eingabe")
+    size_out += "Fehler bei der Eingabe!"
+    
+print(size_out)
+
+divider()
+
+atmo_in = input("3. Bitte den Atmosphärewert (0-F) eingeben: ")
+
+atmo_in = int(translate_code(atmo_in))
+
+if atmo_in >= 0 and atmo_in <= 15:
+  atmo_out += atmo[atmo_in]
+else:
+  print("falsche Eingabe")
+  atmo_out += "Fehler bei der Eingabe!"
+    
+print(atmo_out)
+
+divider()
+  
+hydro_in = input("4. Bitte den Hydrographiewert (0-A) eingeben: ")
+
+hydro_in = int(translate_code(hydro_in))
+
+if hydro_in >= 0 and hydro_in <= 10:
+  hydro_out += hydro[hydro_in]
+else:
+  print("falsche Eingabe")
+  hydro_out += "Fehler bei der Eingabe!"
+    
+print(hydro_out)
+
+divider()
+
+pop_in = input("5. Bitte den Populationswert (0-C) eingeben: ")
+
+pop_in = int(translate_code(pop_in))
+
+if pop_in >= 0 and pop_in <= 12:
+  pop_out += pop[pop_in]
+else:
+  print("falsche Eingabe")
+  pop_out += "Fehler bei der Eingabe!"
+    
+print(pop_out)
+
+divider()
+
+gov_in = input("6. Bitte den Regierungstyp (0-D) eingeben: ")
+
+gov_in = int(translate_code(gov_in))
+
+if gov_in >= 0 and gov_in <= 13:
+  gov_out += gov[gov_in]
+else:
+  print("falsche Eingabe")
+  gov_out += "Fehler bei der Eingabe!"
+    
+print(gov_out)
+
+divider()
+
+just_in = input("7. Bitte den Justizgrad (0-9) eingeben: ")
+
+if just_in >= 0 and just_in <= 9:
+  just_out += just[just_in]
+else:
+  print("falsche Eingabe")
+  just_out += "Fehler bei der Eingabe!"
+    
+print(just_out)
+
+divider()
+
+tech_in = input("8. Bitte das Technologielevel (0-F) eingeben: ")
+
+tech_in = int(translate_code(tech_in))
+
+if tech_in >= 0 and tech_in <= 15:
+  tech_out += tech[tech_in]
+else:
+  print("falsche Eingabe")
+  tech_out += "Fehler bei der Eingabe!"
+    
+print(tech_out)
+
+divider()
 
 print(f"{name}\n{port_out}\n{size_out}\n{atmo_out}\n{hydro_out}\n{pop_out}\n{gov_out}\n{just_out}\n{tech_out}")
