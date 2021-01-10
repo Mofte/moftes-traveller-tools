@@ -145,7 +145,7 @@ just_in=""
 while just_in not in just_true:
   just_in = input("7. Bitte den Justizgrad (0-9) eingeben: ")
 
-just_out += int(just_in)
+just_out += just[int(just_in)]
     
 print(just_out)
 
