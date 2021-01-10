@@ -74,7 +74,10 @@ print(port_out)
 
 print(divider)
 
-size_in = input("2. Bitte die Weltengröße (0-A) eingeben: ")
+size_in = ""
+
+while (int(size_in) < 0 and int(size_in) > 9) or size_in != "A":
+  size_in = input("2. Bitte die Weltengröße (0-A) eingeben: ")
 
 size_in = int(translate_code(size_in))
 
@@ -88,7 +91,8 @@ print(size_out)
 
 print(divider)
 
-atmo_in = input("3. Bitte den Atmosphärewert (0-F) eingeben: ")
+while (int(atmo_in) < 0 and int(atmo_in) > 9) or (atmo_in != "A" and atmo_in != "B" and atmo_in != "C" and atmo_in != "D" and atmo_in != "E" and atmo_in != "F"):
+  atmo_in = input("3. Bitte den Atmosphärewert (0-F) eingeben: ")
 
 atmo_in = int(translate_code(atmo_in))
 
