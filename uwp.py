@@ -51,7 +51,7 @@ print(divider)
 
 port_in = ""
 
-while port_in != "A" and port_in != "B" and port_in != "C" and port_in != "D" and port_in != "E" and port_in != "X" 
+while port_in != "A" and port_in != "B" and port_in != "C" and port_in != "D" and port_in != "E" and port_in != "X":
   port_in = input("1. Bitte die Raumhafenklasse (A-E, X) eingeben: ")
 
 if port_in == "A" or port_in == "a":
