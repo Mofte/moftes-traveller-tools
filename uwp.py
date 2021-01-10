@@ -143,6 +143,7 @@ print(divider)
 
 just_in = input("7. Bitte den Justizgrad (0-9) eingeben: ")
 
+just_in = int(just_in)
 if just_in >= 0 and just_in <= 9:
   just_out += just[just_in]
 else:
