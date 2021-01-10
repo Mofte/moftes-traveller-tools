@@ -65,8 +65,6 @@ uwp = port_in + size_in + atmo_in + hydro_in + pop_in + gov_in + just_in + tech_
 
 translate_uwp(uwp)
 
-int(uwp)
-
 port_out += port[int(uwp(0))]
 size_out += size[int(uwp(1))]
 atmo_out += atmo[int(uwp(2))]
