@@ -51,7 +51,7 @@ print(divider)
 
 port_true = ["A", "a", "B", "b", "C", "c", "D", "d", "E", "e", "X", "x"]
 
-port _in = ""
+port_in = ""
 
 while port_in not in port_true:
   port_in = input("1. Bitte die Raumhafenklasse (A-E, X) eingeben: ")
