@@ -52,7 +52,19 @@ gov_in = input("6. Bitte den Regierungstyp (0-D) eingeben: ")
 just_in = input("7. Bitte den Justizgrad (0-9+) eingeben: ")
 tech_in = input("8. Bitte das Technologielevel (0-F) eingeben: ")
 
-port_in = translate_code(port_in)
+if port_in == "A" or port_in == "a":
+    port_out += port[0]
+elif port_in == "B" or port_in == "b":
+    port_out += port[1]
+elif port_in == "C" or port_in == "c":
+    port_out += port[2]
+elif port_in == "D" or port_in == "d":
+    port_out += port[3]
+elif port_in == "E" or port_in == "e":
+    port_out += port[4]
+elif port_in == "X" or port_in == "x":
+    port_out += port[5]
+
 size_in = translate_code(size_in)
 atmo_in = translate_code(atmo_in)
 hydro_in = translate_code(hydro_in)
@@ -61,7 +73,6 @@ gov_in = translate_code(gov_in)
 just_in = translate_code(just_in)
 tech_in = translate_code(tech_in)
 
-port_out += port[int(port_in)]
 size_out += size[int(size_in)]
 atmo_out += atmo[int(atmo_in)]
 hydro_out += hydro[int(hydro_in)]
