@@ -93,13 +93,7 @@ atmo_in=""
 while atmo_in not in atmo_true:
   atmo_in = input("3. Bitte den Atmosphärewert (0-F) eingeben: ")
 
-atmo_in = int(translate_code(atmo_in))
-
-if atmo_in >= 0 and atmo_in <= 15:
-  atmo_out += atmo[atmo_in]
-else:
-  print("falsche Eingabe")
-  atmo_out += "Fehler bei der Eingabe!"
+atmo_out += atmo[int(translate_code(atmo_in))]
     
 print(atmo_out)
 
@@ -112,14 +106,8 @@ hydro_in=""
 while hydro_in not in hydro_true:
   hydro_in = input("4. Bitte den Hydrographiewert (0-A) eingeben: ")
 
-hydro_in = int(translate_code(hydro_in))
+hydro_out += hydro[int(translate_code(hydro_in))]
 
-if hydro_in >= 0 and hydro_in <= 10:
-  hydro_out += hydro[hydro_in]
-else:
-  print("falsche Eingabe")
-  hydro_out += "Fehler bei der Eingabe!"
-    
 print(hydro_out)
 
 print(divider)
@@ -131,14 +119,8 @@ pop_in=""
 while pop_in not in pop_true:
   pop_in = input("5. Bitte den Populationswert (0-C) eingeben: ")
 
-pop_in = int(translate_code(pop_in))
+pop_out += pop[int(translate_code(pop_in))]
 
-if pop_in >= 0 and pop_in <= 12:
-  pop_out += pop[pop_in]
-else:
-  print("falsche Eingabe")
-  pop_out += "Fehler bei der Eingabe!"
-    
 print(pop_out)
 
 print(divider)
@@ -150,14 +132,8 @@ gov_in=""
 while gov_in not in gov_true:
   gov_in = input("6. Bitte den Regierungstyp (0-D) eingeben: ")
 
-gov_in = int(translate_code(gov_in))
-
-if gov_in >= 0 and gov_in <= 13:
-  gov_out += gov[gov_in]
-else:
-  print("falsche Eingabe")
-  gov_out += "Fehler bei der Eingabe!"
-    
+gov_out += gov[int(translate_code(gov_in))]
+  
 print(gov_out)
 
 print(divider)
@@ -169,12 +145,7 @@ just_in=""
 while just_in not in just_true:
   just_in = input("7. Bitte den Justizgrad (0-9) eingeben: ")
 
-just_in = int(just_in)
-if just_in >= 0 and just_in <= 9:
-  just_out += just[just_in]
-else:
-  print("falsche Eingabe")
-  just_out += "Fehler bei der Eingabe!"
+just_out += int(just_in)
     
 print(just_out)
 
@@ -187,13 +158,7 @@ tech_in=""
 while tech_in not in tech_true:
   tech_in = input("8. Bitte das Technologielevel (0-F) eingeben: ")
 
-tech_in = int(translate_code(tech_in))
-
-if tech_in >= 0 and tech_in <= 15:
-  tech_out += tech[tech_in]
-else:
-  print("falsche Eingabe")
-  tech_out += "Fehler bei der Eingabe!"
+tech_out += tech[int(translate_code(tech_in))]
     
 print(tech_out)
 
