@@ -76,6 +76,8 @@ print(divider)
 
 size_true = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A"]
 
+size_in=""
+
 while size_in not in size_true:
   size_in = input("2. Bitte die Weltengröße (0-A) eingeben: ")
 
