@@ -18,20 +18,20 @@ def translate_code(code):
     code = code.replace("f", "15")
     return code
 
-def translate_port(port):
-    port = port.replace("A", "0")
-    port = port.replace("a", "0")
-    port = port.replace("B", "1")
-    port = port.replace("b", "1")
-    port = port.replace("C", "2")
-    port = port.replace("c", "2")
-    port = port.replace("D", "3")
-    port = port.replace("d", "3")
-    port = port.replace("E", "4")
-    port = port.replace("e", "4")
-    port = port.replace("X", "5")
-    port = port.replace("x", "5")
-    return port
+def translate_port_code(port_code):
+    port_code = port_code.replace("A", "0")
+    port_code = port_code.replace("a", "0")
+    port_code = port_code.replace("B", "1")
+    port_code = port_code.replace("b", "1")
+    port_code = port_code.replace("C", "2")
+    port_code = port_code.replace("c", "2")
+    port_code = port_code.replace("D", "3")
+    port_code = port_code.replace("d", "3")
+    port_code = port_code.replace("E", "4")
+    port_code = port_code.replace("e", "4")
+    port_code = port_code.replace("X", "5")
+    port_code = port_code.replace("x", "5")
+    return port_code
 
 port = ["A - hervorragend","B - gut","C - mittelmäßig","D - schlecht","E - lediglich eine Grenzinstallation","X - kein Raumhafen"]
 port_true = ["A", "a", "B", "b", "C", "c", "D", "d", "E", "e", "X", "x"]
@@ -96,7 +96,7 @@ Es wird lediglich geprüft, ob die Länge der Eingabe korrekt ist, bitte deshalb
     while len(uwp_in) != 9:
         uwp_in = input("Bitte das UWP eingeben: ")
         
-    port_out += port[int(translate_port(uwp_in[0]))]
+    port_out += port[int(translate_port_code(uwp_in[0]))]
     size_out += size[int(translate_code(uwp_in[1]))]
     atmo_out += atmo[int(translate_code(uwp_in[2]))]
     hydro_out += hydro[int(translate_code(uwp_in[3]))]
@@ -116,7 +116,7 @@ elif input_choice == "2":
     while port_in not in port_true:
         port_in = input("1. Bitte die Raumhafenklasse (A-E, X) eingeben: ")
     
-    port_out += port[int(translate_port(port_in))]
+    port_out += port[int(translate_port_code(port_in))]
         
     print(port_out)
 
