@@ -85,17 +85,17 @@ Das UWP ist in der folgenden Reihenfolge einzugeben:
     5. Population (0-C)
     6. Regierungsform (0-D)
     7. Justizgrad (0-9)
-    8. Technologielevel (0-F)
+    8. Bindestrich
+    9. Technologielevel (0-F)
 Es wird lediglich geprüft, ob die Länge der Eingabe korrekt ist, bitte deshalb die Werte genau überprüfen.
-(Bsp.: A-3-2-5-B-9-3-E)""")
+(Bsp.: A325B93-E)""")
     
     print(divider)
         
     uwp_in=""
-    while len(uwp_in.split("-")) != 8:
-        uwp_in = input("Bitte das UWP mit '-' getrennt und ohne Leerzeichen eingeben: ")
+    while len(uwp_in) != 9:
+        uwp_in = input("Bitte das UWP eingeben: ")
         
-    uwp_in = uwp_in.split("-")
     port_out += port[int(translate_port(uwp_in[0]))]
     size_out += size[int(translate_code(uwp_in[1]))]
     atmo_out += atmo[int(translate_code(uwp_in[2]))]
