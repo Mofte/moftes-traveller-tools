@@ -62,7 +62,7 @@ tech_out = "Technologielevel: "
 
 print(divider)
 
-print("Ein simpler UWP-Translator für Mongoose Traveller 1Ed.\n")
+print("Ein simpler UWP-Translator für Mongoose Traveller 1Ed.")
 
 print(divider)
 
