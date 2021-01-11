@@ -87,13 +87,12 @@ Das UWP ist in der folgenden Reihenfolge einzugeben:
     7. Justizgrad (0-9)
     8. Bindestrich
     9. Technologielevel (0-F)
-Es wird lediglich geprüft, ob die Länge der Eingabe korrekt ist, bitte deshalb die Werte genau überprüfen.
 (Bsp.: A325B93-E)""")
     
     print(divider)
         
     uwp_in=""
-    while len(uwp_in) != 9:
+    while (len(uwp_in) != 9) or str(uwp_in[0]) not in port_true or uwp_in[1] not in size_true or uwp_in[2] not in atmo_true or uwp_in[3] not in hydro_true or uwp_in[4] not in pop_true or uwp_in[5] not in gov_true or uwp_in[6] not in just_true or uwp_in[8] not in tech_true:
         uwp_in = input("Bitte das UWP eingeben: ")
         
     port_out += port[int(translate_port_code(uwp_in[0]))]
