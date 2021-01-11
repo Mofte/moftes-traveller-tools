@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import random
+
 divider = "\n" + "-"*48 + "\n"
 
 def translate_code(code):
@@ -68,10 +70,12 @@ name = input("Bitte den Namen der Welt eingeben: ")
 
 print(divider)
 
-print("Soll das UWP komplett oder Schritt für Schritt eingegeben werden?")
 input_choice =""
-while input_choice != "1" and input_choice != "2":
-    input_choice = input("Für die Eingabe eines kompletten UWP bitte '1' eingeben, für die Eingabe jedes einzelnen Codes bitte '2' eingeben: ")
+while input_choice != "1" and input_choice != "2" and input_choice != "3":
+    input_choice = input("""Für die Eingabe eines kompletten UWP bitte '1' eingeben.
+Für die Eingabe jedes einzelnen Codes bitte '2' eingeben.
+Für eine zufällige Welt bitte '3' eingeben.
+Eingabe: """)
 
 print(divider)
 
@@ -102,7 +106,7 @@ Das UWP ist in der folgenden Reihenfolge einzugeben:
     pop_out += pop[int(translate_code(uwp_in[4]))]
     gov_out += gov[int(translate_code(uwp_in[5]))]
     just_out += just[int(translate_code(uwp_in[6]))]
-    tech_out += tech[int(translate_code(uwp_in[7]))]
+    tech_out += tech[int(translate_code(uwp_in[8]))]
 
 
 elif input_choice == "2":
@@ -195,6 +199,17 @@ elif input_choice == "2":
     tech_out += tech[int(translate_code(tech_in))]
     
     print(tech_out)
+
+elif input_choice == "3":
+    print("Zufällige Welt wird erstellt...")
+    port_out += random.choice(port)
+    size_out += random.choice(size)
+    atmo_out += random.choice(atmo)
+    hydro_out += random.choice(hydro)
+    pop_out += random.choice(pop)
+    gov_out += random.choice(gov)
+    just_out += random.choice(just)
+    tech_out += random.choice(tech)
 
 print(divider)
 
