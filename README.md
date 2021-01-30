@@ -1,5 +1,4 @@
-Moftes Traveller Tools
-======================
+# Moftes Traveller Tools
 These are some simple tools for use with the 1st Edition of the Pen & Paper Tabletop RPG "Traveller" by Mongoose. 
 Right now all tools are in German.
 
